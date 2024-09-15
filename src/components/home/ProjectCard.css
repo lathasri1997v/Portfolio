@@ -1,0 +1,76 @@
+.bg-custom {
+    background-color: #B5DFEF; /* Light blue background color as requested */
+    padding: 50px 0; /* Adds padding to create space around the section */
+}
+.shadow-lg {
+    box-shadow: var(--bs-box-shadow-lg) !important;
+    border-radius: 34px !important;
+    
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.card {
+    border-radius: 34px;
+}
+/* Project Card */
+.project-card {
+    max-width: 900px;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc; /* Add border to project card */
+    background-color: #fff; /* Ensure background is white */
+}
+
+/* Image */
+.project-image {
+    height: 180px; /* Height adjusted for consistency */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners for the image */
+    margin: auto 0; /* Center image vertically */
+    border: 2px solid #8EACCD; /* Add border to the image */
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Buttons */
+.card-buttons {
+    margin-top: 20px;
+}
+
+.btn-outline-secondary {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-right: 10px;
+}
+
+/* Tags/Badges */
+.badge {
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* Skeleton placeholders */
+.skeleton {
+    background-color: #e0e0e0;
+}
+
+.shadow-lg {
+    border-radius: 34px;
+}

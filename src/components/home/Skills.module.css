@@ -1,0 +1,76 @@
+.experienceSection {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.sectionTitle:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+}
+
+.companyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companyLogo {
+  width: 60px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.companyName {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: 15px;
+  color: #B5DFEF;
+}
+
+.jobDetails {
+  margin-top: 20px;
+}
+
+.jobTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Custom List Styling */
+.customList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.customList li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.bullet {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #B5DFEF; /* Golden color for bullet */
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 15px;
+}
+
+.customList li p {
+  margin: 0;
+  font-size: 1rem; /* Adjust this to increase or decrease text size */
+}
