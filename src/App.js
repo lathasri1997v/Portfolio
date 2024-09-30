@@ -20,6 +20,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
 
+// Set the basename conditionally based on the environment
+const basename = process.env.NODE_ENV === 'development' ? '/home' : '/portfolio';
+
 const Home = React.forwardRef((props, ref) => {
   return (
     <>
@@ -48,7 +51,9 @@ const Home = React.forwardRef((props, ref) => {
           specfic={repos.specificRepos}
         />
       )}
-      {skills.show && <Skills />}
+      {skills.show && (
+        <Skills />
+      )}
     </>
   );
 });
@@ -57,7 +62,7 @@ const App = () => {
   const titleRef = React.useRef();
 
   return (
-    <BrowserRouter basename="/Portfolio">
+    <BrowserRouter basename={basename}>
       {navBar.show && <Navbar ref={titleRef} />}
       <Routes>
         <Route path="/" exact element={<Home ref={titleRef} />} />
