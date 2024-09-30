@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/home/static/css/main.0c840799.css",
+    "main.js": "/home/static/js/main.7a1eae15.js",
+    "static/js/787.4b24f717.chunk.js": "/home/static/js/787.4b24f717.chunk.js",
+    "static/media/profilepic.png": "/home/static/media/profilepic.7aa09e1469c89b028f65.png",
+    "static/media/background.png": "/home/static/media/background.545aebab6669f02116f1.png",
+    "static/media/todo_app.png": "/home/static/media/todo_app.f89c6e304ed0311bc9a8.png",
+    "static/media/portfolio.png": "/home/static/media/portfolio.5f3a0b65744453cdcbe0.png",
+    "static/media/background_2.png": "/home/static/media/background_2.c0ebc310fe613038470a.png",
+    "static/media/resume.pdf": "/home/static/media/resume.47a3c53fcfa94490bbfc.pdf",
+    "static/media/cashtrack.png": "/home/static/media/cashtrack.c53b972e1a2756515e10.png",
+    "index.html": "/home/index.html",
+    "main.0c840799.css.map": "/home/static/css/main.0c840799.css.map",
+    "main.7a1eae15.js.map": "/home/static/js/main.7a1eae15.js.map",
+    "787.4b24f717.chunk.js.map": "/home/static/js/787.4b24f717.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c840799.css",
+    "static/js/main.7a1eae15.js"
+  ]
+}
