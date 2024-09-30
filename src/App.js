@@ -17,19 +17,15 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import { Blog } from "./components/blog/Blog";
-// import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
-
-//import Experience from "./components/home/Experience";
 
 const Home = React.forwardRef((props, ref) => {
   return (
     <>
       <MainBody
         gradient={mainBody.gradientColors}
-        backgroundImage= {mainBody.backgroundImage}
+        backgroundImage={mainBody.backgroundImage}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
         message={mainBody.message}
         icons={mainBody.icons}
@@ -44,11 +40,6 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      {/* {
-        experiences.show && (
-          <Experience experiences={experiences}/>
-        )
-      } */}
       {repos.show && (
         <Project
           heading={repos.heading}
@@ -57,19 +48,7 @@ const Home = React.forwardRef((props, ref) => {
           specfic={repos.specificRepos}
         />
       )}
-      {/* {leadership.show && (
-        <Leadership
-          heading={leadership.heading}
-          message={leadership.message}
-          img={leadership.images}
-          imageSize={leadership.imageSize}
-        />
-      )} */}
-      {skills.show && (
-        <Skills
-        />
-      )}
-      
+      {skills.show && <Skills />}
     </>
   );
 });
@@ -78,13 +57,11 @@ const App = () => {
   const titleRef = React.useRef();
 
   return (
-    <BrowserRouter basename="/home">
+    <BrowserRouter basename="/Portfolio">
       {navBar.show && <Navbar ref={titleRef} />}
       <Routes>
         <Route path="/" exact element={<Home ref={titleRef} />} />
       </Routes>
-      {/* {false && <Route path="/blog" exact component={Blog} />}
-      {false && <Route path="/blog/:id" component={BlogPost} />} */}
       <Footer>
         {getInTouch.show && (
           <GetInTouch
