@@ -25,10 +25,10 @@ const projectImageURL = (projectName) => {
   const projectImages = {
     "Todo-application": todoAppImage,
     "CashTrack-App": cashTrackImage,
-    "portfolio": portfolioImage,
+    "Portfolio": portfolioImage,
   };
 
-  return projectImages[projectName] || "/path/to/default-image.jpg";
+  return projectImages[projectName] || '/assets/img/portfolio.png';
 };
 
 // CardButtons Component
@@ -65,6 +65,7 @@ const ProjectCard = ({ value }) => {
     languages_url,
     pushed_at,
   } = value;
+  console.log(name);
 
   const [languages, setLanguages] = useState([]);
 
